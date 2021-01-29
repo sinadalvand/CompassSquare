@@ -4,13 +4,13 @@
 
 Simple kotlin android application for get nearby places realtime by using Offline-First ,retrofit ,Room , Paging 3, MVVM , LocationManager , Single Activity , Koin DI
 
-```
-How it work:
+
+#### How it work:
 
 at first request location permission , then after grant , it will auto get current location 
 in realtime and then request to [Four Square API](https://foursquare.com/) and get your nearby location
 and show them as list , it also support cache and offline first
-```
+
 
 
    
