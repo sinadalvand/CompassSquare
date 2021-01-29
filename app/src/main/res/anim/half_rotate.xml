@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ /**
+  ~  * Created by Sina Dalvand on 12/28/20 2:50 AM
+  ~  * Copyright (c) 2020 . All rights reserved.
+  ~  * Last modified 12/28/20 2:50 AM
+  ~  */
+  -->
+<rotate
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:fromDegrees="0"
+    android:toDegrees="90"
+    android:pivotX="50%"
+    android:pivotY="50%"
+    android:interpolator="@android:anim/linear_interpolator"
+    android:repeatCount="infinite"
+    android:duration="1200" />

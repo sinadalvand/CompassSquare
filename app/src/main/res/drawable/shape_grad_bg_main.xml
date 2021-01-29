@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ /**
+  ~  * Created by Sina Dalvand on 12/26/20 9:26 PM
+  ~  * Copyright (c) 2020 . All rights reserved.
+  ~  * Last modified 12/26/20 9:26 PM
+  ~  */
+  -->
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <solid android:color="#3f5063" />
+
+    <gradient
+        android:angle="135"
+        android:endColor="#615BF3"
+        android:startColor="#5B2F83" />
+
+
+</shape>

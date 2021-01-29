@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+  ~ /**
+  ~  * Created by Sina Dalvand on 12/28/20 5:54 PM
+  ~  * Copyright (c) 2020 . All rights reserved.
+  ~  * Last modified 12/28/20 5:54 PM
+  ~  */
+  -->
+
+<resources>
+    <attr name="blackbold" format="color" />
+    <attr name="textColorDescription" format="color" />
+</resources>

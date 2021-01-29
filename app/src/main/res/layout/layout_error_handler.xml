@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+  ~ /**
+  ~  * Created by Sina Dalvand on 12/28/20 5:30 AM
+  ~  * Copyright (c) 2020 . All rights reserved.
+  ~  * Last modified 12/28/20 5:30 AM
+  ~  */
+  -->
+
+<merge>
+
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/layout_handler_layout_container"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/layout_handler_img_icon"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            app:srcCompat="@drawable/ic_warning" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/layout_handler_txt_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            app:fontFamily="@font/iran_medium"
+            tools:text="No Internet Connection " />
+
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/layout_handler_txt_desc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:gravity="center"
+            android:minLines="2"
+            app:fontFamily="@font/iran_light"
+            tools:text="let explain more here ,my this work \n so go one and be the bst" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/layout_handler_btn_action"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/shape_solid_button"
+            android:gravity="center"
+            android:paddingHorizontal="20dp"
+            android:textColor="@color/black"
+            tools:text="Retry" />
+
+    </LinearLayout>
+
+</merge>
+
+

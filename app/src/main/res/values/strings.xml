@@ -1,0 +1,33 @@
+<resources>
+    <string name="app_name">CompassSquare</string>
+    <string name="permission_request">Permission Request!</string>
+    <string name="no">No</string>
+    <string name="yes">Yes</string>
+    <string name="permission_request_description">we need location access to get your current location to find nearby places.\ndo you accept?</string>
+    <string name="need_yout_permission">We need your permission to access location service :(</string>
+    <string name="four">Four</string>
+    <string name="square">Square</string>
+    <string name="let_s_find_your_nearby_awesome_places">let\'s find your nearby awesome places</string>
+    <string name="popular_places">Popular Places</string>
+    <string name="offline">Offline</string>
+    <string name="rate">%s/10</string>
+    <string name="grant_persmission">Grant Permission</string>
+    <string name="updating">updating</string>
+    <string name="updated">updated</string>
+    <string name="error">Error</string>
+    <string name="unexpected_error">Unexpected Error !</string>
+    <string name="unexpected_error_desc">unexpected error happened! \n swap down to retry</string>
+    <string name="not_found_desc">we can\'t find any place near you! \n  try to change your location</string>
+    <string name="not_found">Not matches Found !</string>
+    <string name="empty">We are Empty !</string>
+    <string name="empty_desc">we need to connect internet for fist time! \n after check network connection \n  swap down to refresh</string>
+    <string name="gps_access">Gps Access !</string>
+    <string name="gps_desc">to get your exact location we need \n gps service , please turn it on !</string>
+    <string name="turn_on">Turn On</string>
+    <string name="unknown_error">Unknown Error Happen</string>
+    <string name="unknown_error_happened">can\'t fetch data from server  \n  tap to return</string>
+    <string name="no_internet">No Internet Connection</string>
+    <string name="check_netwoek_desc">check your internet \n tap retry</string>
+    <string name="retry">Retry</string>
+    <string name="return_text">Return</string>
+</resources>

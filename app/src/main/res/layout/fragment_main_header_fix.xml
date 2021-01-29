@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ /**
+  ~  * Created by Sina Dalvand on 12/27/20 12:40 AM
+  ~  * Copyright (c) 2020 . All rights reserved.
+  ~  * Last modified 12/27/20 12:40 AM
+  ~  */
+  -->
+
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout
+        android:id="@+id/fragment_main_header"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:layout_gravity="bottom"
+        android:paddingHorizontal="8dp"
+        app:layout_collapseMode="pin">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="@string/popular_places"
+            android:textSize="16sp"
+            app:fontFamily="@font/iran_bold" />
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/fragment_main_status_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingHorizontal="5dp"
+                android:text="@string/offline" />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/fragment_main_status_img"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                app:srcCompat="@drawable/ic_no_internet" />
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+</merge>

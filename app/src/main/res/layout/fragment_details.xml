@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+  ~ /**
+  ~  * Created by Sina Dalvand on 12/22/20 11:07 PM
+  ~  * Copyright (c) 2020 . All rights reserved.
+  ~  * Last modified 12/22/20 11:07 PM
+  ~  */
+  -->
+
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/fragment_details_img_header"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:adjustViewBounds="true"
+        app:layout_constraintBottom_toTopOf="@+id/fragment_details_title"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintWidth_percent="0.2"
+        app:srcCompat="@drawable/ic_compass" />
+
+
+    <TextView
+        android:id="@+id/fragment_details_title"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:fontFamily="@font/iran_black"
+        app:layout_constraintBottom_toTopOf="@+id/guideline"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/guideline"
+        app:layout_constraintWidth_percent="0.85"
+        tools:text="Miniature Flower Shop | گلستان مینیاتور (گلستان مینیاتور)" />
+
+
+    <LinearLayout
+        android:id="@+id/fragment_details_layout_rate"
+        android:layout_width="100dp"
+        android:layout_height="30dp"
+        android:background="@drawable/shape_stroke_border"
+        app:layout_constraintBottom_toTopOf="@+id/guideline2"
+        app:layout_constraintEnd_toStartOf="@+id/fragment_details_layout_like"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/fragment_details_title">
+
+        <TextView
+            android:id="@+id/fragment_details_txt_rate"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            tools:text="7.1/10.0" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/fragment_details_layout_like"
+        android:layout_width="100dp"
+        android:layout_height="30dp"
+        android:background="@drawable/shape_stroke_border"
+        android:gravity="center|center_vertical"
+        android:orientation="horizontal"
+        android:padding="4dp"
+        app:layout_constraintBottom_toTopOf="@+id/guideline2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/fragment_details_layout_rate"
+        app:layout_constraintTop_toBottomOf="@+id/fragment_details_title">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:padding="3dp"
+            app:srcCompat="@drawable/ic_heart" />
+
+        <TextView
+            android:id="@+id/fragment_details_txt_like"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:paddingHorizontal="4dp"
+            tools:text="250" />
+
+
+    </LinearLayout>
+
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/fragment_details_divider"
+        android:layout_width="100dp"
+        android:layout_height="1dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="4dp"
+        android:background="#60FFFFFF"
+        android:padding="0dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/guideline2" />
+
+
+    <TextView
+        android:id="@+id/fragment_details_txt_category"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="10dp"
+        android:fontFamily="@font/iran_medium"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/fragment_details_divider"
+        tools:text="Shop" />
+
+
+    <TextView
+        android:id="@+id/fragment_details_txt_address"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="10dp"
+        android:fontFamily="@font/iran_light"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/fragment_details_txt_category"
+        tools:text="iran , lorestan ,khoramabad" />
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/fragment_details_recycler_photo"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:orientation="horizontal"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHeight_percent="0.3"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.29" />
+
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.43" />
+
+
+    <include layout="@layout/layout_error_handler" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
