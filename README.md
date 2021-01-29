@@ -1,6 +1,6 @@
 
 
-# CompassSquare  
+ # CompassSquare   <img src="https://github.com/sinadalvand/CompassSquare/blob/master/art/m0.png" width="60"/>
 
 Simple kotlin android application for get nearby places realtime by using Offline-First ,retrofit ,Room , Paging 3, MVVM , LocationManager , Single Activity , Koin DI
 
